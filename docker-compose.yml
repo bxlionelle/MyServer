@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
     container_name: app3
     expose:
-      - "80:80s"
+      - "80:80"
     networks:
       - app-network
 
