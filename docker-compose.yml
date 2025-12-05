@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  app3:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: app3
+    expose:
+      - "80:80s"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
